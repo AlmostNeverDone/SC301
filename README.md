@@ -25,23 +25,35 @@ The project also demonstrates different methods of assigning directory roles and
 
 <h2>Key Learning Outcomes｜主要學習成果</h2>
 
-* Create and verify user accounts in Microsoft Entra ID<br/>
-建立並驗證 Microsoft Entra ID 使用者帳戶
+* Create and configure new user accounts in Microsoft Entra ID<br/>
+建立與設定 Microsoft Entra ID 使用者帳號
 
-* Assign a Microsoft license to a user<br/>
-為使用者指派 Microsoft 授權
+* Validate newly provisioned user accounts through sign-in testing<br/>
+透過登入測試驗證新建立的使用者帳號
 
-* Invite and manage an external user as a guest<br/>
-邀請並管理外部使用者
+* Assign Microsoft service licenses to individual users<br/>
+為個別使用者指派 Microsoft 服務授權
 
-* Assign directory roles to users and configure assignment types<br/>
-為使用者指派目錄角色並設定角色指派類型
+* Invite external users into an Entra ID tenant<br/>
+邀請外部使用者加入 Entra ID 租戶
 
-* Perform bulk user provisioning using a CSV template<br/>
-使用 CSV 範本進行批次使用者佈建
+* Understand the difference between internal members and external users<br/>
+理解內部成員與外部使用者的基本差異
 
-* Understand basic identity administration workflows across Microsoft Entra ID and Microsoft 365<br/>
-理解 Microsoft Entra ID 與 Microsoft 365 中的基礎身分管理流程
+* Assign Microsoft Entra directory roles to users<br/>
+為使用者指派 Microsoft Entra 目錄角色
+
+* Explore different role assignment workflows through user and role management interfaces<br/>
+透過使用者與角色管理介面操作不同的角色指派流程
+
+* Understand Active and Eligible role assignment options<br/>
+理解 Active 與 Eligible 角色指派方式
+
+* Perform bulk user provisioning using CSV templates<br/>
+使用 CSV 範本批次建立使用者帳號
+
+* Validate successfully created users after provisioning operations<br/>
+於帳號建立完成後驗證使用者建立結果
 <br/>
 
 ---------
