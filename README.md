@@ -60,24 +60,20 @@ The project also demonstrates different methods of assigning directory roles and
 
 <h2>Tools and Concepts Covered｜涵蓋工具與概念</h2>
 
-| Tools and Concepts                | 工具與概念                     |
-| --------------------------------- | ------------------------- |
-| Microsoft Entra ID                | Microsoft Entra 身分識別與存取管理 |
-| Microsoft Entra admin center      | Microsoft Entra 管理中心      |
-| Microsoft 365 admin center        | Microsoft 365 管理中心        |
-| User Management                   | 使用者管理                     |
-| User Accounts                     | 使用者帳戶                     |
-| User Principal Name               | 使用者主體名稱 (UPN)                  |
-| Member and Guest Users            | 成員與來賓使用者                  |
-| Microsoft License Assignment      | Microsoft 授權指派            |
-| External User / Guest Invitation  | 外部使用者／來賓邀請                |
-| Microsoft Entra Directory Roles   | Microsoft Entra 目錄角色      |
-| Role Assignment                   | 角色指派                      |
-| Eligible Assignment               | 可啟用的角色指派                  |
-| Active Assignment                 | 啟用中的角色指派                  |
-| Bulk User Creation                | 批次使用者建立                   |
-| CSV User Provisioning             | CSV 使用者佈建                 |
-| Multi-Factor Authentication       | 多因素驗證 (MFA)                    |
+| Category 分類                                      | Tools / Concepts 工具 / 概念       |
+| ------------------------------------------------ | ------------------------------ |
+| Cloud Identity Management <br/>雲端身分管理          | Microsoft Entra ID |
+| User Provisioning <br/>使用者建立                    | User account creation<br/>使用者帳號建立 |
+| User Validation <br/>使用者驗證                      | Sign-in testing<br/>登入測試 |
+| User Types <br/>使用者類型                           | Member and External User<br/>內部成員與外部使用者 |
+| External Identity <br/>外部身分                      | External user invitation<br/>外部使用者邀請 |
+| License Management <br/>授權管理                     | Microsoft 365 Admin Center |
+| Role Management <br/>角色管理                        | Microsoft Entra Roles & Administrators |
+| Role Assignment <br/>角色指派                        | Active and Eligible assignments<br/>Active 與 Eligible 指派 |
+| Identity Administration <br/>身分管理                | Microsoft Entra Admin Center |
+| Bulk User Management <br/>批次使用者管理              | Bulk Create |
+| Data Import <br/>資料匯入                            | CSV user provisioning template<br/>CSV 使用者建立範本 |
+| Identity and Access Management <br/>身分與存取管理     | User lifecycle administration<br/>使用者生命週期管理 |
 
 
 <br/>
@@ -94,17 +90,13 @@ The project also demonstrates different methods of assigning directory roles and
 
 [Tasks]
 
-* Prepare Azure Environment and Resource Group (準備 Azure 環境與資源群組)
-* Create Test Storage Account (建立測試儲存體帳戶)
-* Create Security Group in Entra ID (建立 Entra ID 安全性群組)
-* Create New User Account (建立新使用者帳戶)
-* Add User to Security Group (將使用者加入安全性群組)
-* Assign Reader Role at Resource Group Scope (於資源群組範圍指派 Reader 角色)
-* Verify Effective Permissions with IAM (使用 IAM 驗證有效權限)
-* Review RBAC Activity Logs (檢視 RBAC 活動記錄)
-* Enable Temporary Access Pass (啟用臨時存取通行證)
-* Generate TAP for New User (為新使用者產生 TAP)
-* Validate Least-Privilege Access Model (驗證最小權限存取模型)
+* Create New User Account (建立新使用者帳號)
+* Validate New User Sign-In (驗證新使用者登入)
+* Assign License to User (為使用者指派授權)
+* Invite External User (邀請外部使用者)
+* Assign Directory Role to User (為使用者指派目錄角色)
+* Assign Role through Roles & Administrators (透過 Roles & Administrators 指派角色)
+* Bulk Create Users with CSV (使用 CSV 批次建立使用者)
 <br/>
 
 ---------
