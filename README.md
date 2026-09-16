@@ -8,13 +8,17 @@ Microsoft Entra ID 使用者管理實作
 
 <h2>Outline｜專題簡介</h2>
 
-This project demonstrates basic identity administration tasks in Microsoft Entra ID, covering user creation, license assignment, external user invitation, role assignment, and bulk user provisioning.
+This project demonstrates fundamental user management operations in Microsoft Entra ID, including user provisioning, sign-in validation, license assignment, external user invitation, directory role assignment, and bulk user creation.
 
-本專題實作 Microsoft Entra ID 的基礎身分管理工作，涵蓋使用者建立、授權指派、外部使用者邀請、角色指派，以及批次使用者佈建。
+本專題展示 Microsoft Entra ID 中的基礎使用者管理操作，包括使用者帳號建立、登入驗證、授權指派、外部使用者邀請、目錄角色配置，以及批次建立使用者。
 
-In this scenario, we use both the Microsoft Entra admin center and Microsoft 365 admin center to manage user identities and related access settings.
+The lab simulates common Identity and Access Management (IAM) administrative tasks performed during user onboarding and account management within a cloud identity environment.
 
-在本案中，我們將同時使用 Microsoft Entra 管理中心和 Microsoft 365 管理中心來管理使用者身分和相關的存取設定。
+本實驗模擬雲端身分環境中常見的身分與存取管理（IAM）工作，包括新使用者建立與帳號管理流程。
+
+The project also demonstrates different methods of assigning directory roles and introduces CSV-based bulk provisioning to improve efficiency when managing multiple user accounts.
+
+本專題同時示範不同的目錄角色指派方式，並導入以 CSV 為基礎的批次帳號建立流程，以提升大量使用者管理時的作業效率。
 <br/>
 
 ---------
