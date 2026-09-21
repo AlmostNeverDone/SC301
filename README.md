@@ -102,68 +102,60 @@ The project also demonstrates different methods of assigning directory roles and
 <h2>Practice｜實踐</h2> <p align="center">
 
 <p align="center">
-<b>Task 1: Prepare Azure Environment and Resource Group<br/> (準備 Azure 環境與資源群組)</b><br/>
-<img src="https://i.imgur.com/VMFYfoX.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 1-1: Create a New User Account<br/> (建立新使用者帳號)</b><br/>
+<img src="https://i.imgur.com/90xDZpo.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Created a new user account in Microsoft Entra ID and configured the required identity properties for cloud access.<br/>
+在 Microsoft Entra ID 中建立新的使用者帳號，並設定雲端存取所需的基本身分屬性<br/>
 <br />
 <br />
-<b>Task 2: Create Test Storage Account<br/> (建立測試儲存體帳戶)</b><br/>
-<img src="https://i.imgur.com/yVu7sLp.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 1-2: Validate New User Sign-In<br/> (驗證新使用者登入)</b><br/>
+<img src="https://i.imgur.com/N3oXIvR.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Signed in with the newly provisioned account to verify that <br/>the user could successfully authenticate to the Microsoft Entra environment.<br/>
+使用新建立的帳號登入 Microsoft Entra 環境，確認使用者帳號能夠成功完成身分驗證<br/>
 <br />
 <br />
-<b>Task 3: Create Security Group in Entra ID<br/> (建立 Entra ID 安全性群組)</b><br/>
-<img src="https://i.imgur.com/DJn5GGI.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 2: Assign a License to the User<br/> (為使用者指派授權)</b><br/>
+<img src="https://i.imgur.com/dWrJHlF.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Assigned a Microsoft service license to the newly created user through the Microsoft 365 Admin Center.<br/>
+透過 Microsoft 365 Admin Center 為新建立的使用者指派 Microsoft 服務授權<br/>
 <br />
 <br />
-<b>Task 4: Create New User Account<br/> (建立新使用者帳戶)</b><br/>
-<img src="https://i.imgur.com/8jHy811.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 3: Invite an external user<br/> (邀請外部用戶)</b><br/>
+<img src="https://i.imgur.com/xvMrkGq.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Invited an external user to the Microsoft Entra tenant to demonstrate external identity onboarding<br/> and cross-organization access scenarios.<br/>
+邀請外部使用者加入 Microsoft Entra 租戶，以示範外部身分建立與跨組織存取情境<br/>
 <br />
 <br />
-<b>Task 5: Add User to Security Group<br/> (將使用者加入安全性群組)</b><br/>
-<img src="https://i.imgur.com/SZ6YEpF.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 4-1: Assign an Eligible Directory Role<br/> (指派 Eligible 目錄角色)</b><br/>
+<img src="https://i.imgur.com/cVnVND5.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Group-based access control simplifies permission management by assigning permissions to groups instead of individual users.<br/> 群組式存取控制可透過群組集中管理權限，而非逐一指派給個別使用者<br/>
-<br />
-<br />
-<b>Task 6: Assign Reader Role at Resource Group Scope<br/> (於資源群組範圍指派 Reader 角色)</b><br/>
-<img src="https://i.imgur.com/WQBu73g.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* The Reader role allows viewing Azure resources while preventing modification or deletion actions.<br/> Reader 角色允許檢視 Azure 資源，但禁止修改或刪除操作<br/>
+* Assigned the Attribute Definition Reader role to the user using the Eligible assignment type.<br/>
+使用 Eligible 指派方式，為使用者配置 Attribute Definition Reader 目錄角色<br/>
 <br />
 <br />
-<b>Task 7: Verify Effective Permissions with IAM<br/> (使用 IAM 驗證有效權限)</b><br/>
-<img src="https://i.imgur.com/N14ZufQ.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 4-2: Assign a Directory Role through Roles & Administrators<br/> (透過 Roles & Administrators 指派目錄角色)</b><br/>
+<img src="https://i.imgur.com/8Ex31LG.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* IAM Check Access validates inherited permissions and confirms effective RBAC access at the selected scope.<br/> IAM Check Access 可驗證繼承權限，並確認使用者於指定範圍內的有效 RBAC 存取權限<br/>
-<br />
-<br />
-<b>Task 8: Review RBAC Activity Logs<br/> (檢視 RBAC 活動記錄)</b><br/>
-<img src="https://i.imgur.com/HpN5jQT.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* Azure Activity Logs provide audit trails for RBAC configuration changes and administrative actions.<br/> Azure Activity Log 可提供 RBAC 設定變更與管理操作的稽核紀錄<br/>
+* Assigned the Attribute Log Reader role through the Roles & Administrators interface and verified the resulting role assignment.<br/>
+透過 Roles & Administrators 介面指派 Attribute Log Reader 角色，並驗證角色指派結果<br/>
 <br />
 <br />
-<b>Task 9: Enable Temporary Access Pass<br/> (啟用臨時存取通行證)</b><br/>
-<img src="https://i.imgur.com/rvvzAeV.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 5-1: Prepare the Bulk User CSV Template<br/> (準備批次使用者 CSV 範本)</b><br/>
+<img src="https://i.imgur.com/SvAymsA.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Temporary Access Pass (TAP) enables secure onboarding without requiring immediate MFA device enrollment.<br/> 臨時存取通行證(TAP) 可在尚未完成 MFA 裝置註冊前提供安全登入方式<br/>
-<br />
-<br />
-<b>Task 10: Generate TAP for New User<br/> (為新使用者產生 TAP)</b><br/>
-<img src="https://i.imgur.com/DohgHxw.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* TAP provides temporary time-limited authentication credentials for secure first-time access.<br/> TAP 提供具時效性的臨時驗證憑證，用於安全的首次登入流程<br/>
+* Prepared a CSV-based user provisioning file using the Microsoft Entra bulk user template.<br/>
+使用 Microsoft Entra 批次使用者範本準備 CSV 帳號建立檔案<br/>
 <br />
 <br />
-<b>Task 11-1: Sign in as Restricted User<br/> (以受限權限使用者登入)</b><br/>
-<img src="https://i.imgur.com/5g8Kczd.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 5-2: Bulk Create and Validate Users<br/> (批次建立並驗證使用者)</b><br/>
+<img src="https://i.imgur.com/GuHbMdh.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* The user successfully inherited Reader permissions through group membership.<br/> 使用者成功透過群組繼承 Reader 權限<br/>
-<br />
-<br />
-<b>Task 11-2: Validate Least-Privilege Restriction<br/> (驗證最小權限限制)</b><br/>
-<img src="https://i.imgur.com/ResVJsw.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* Write operations were blocked as expected, validating the least-privilege access model.<br/> 系統成功阻止寫入操作，驗證最小權限模型運作正常<br/>
+* Uploaded the CSV provisioning file and verified that multiple user accounts were successfully created in Microsoft Entra ID.<br/>
+上傳 CSV 使用者建立檔案，並確認多個使用者帳號已成功建立於 Microsoft Entra ID<br/>
 <br />
 <br />
 
