@@ -1,6 +1,6 @@
-# Microsoft Entra ID User Management Practice
+# Microsoft Entra ID User Management: Provisioning, Licensing, Roles, and Bulk Operations
 
-Microsoft Entra ID 使用者管理實作
+Microsoft Entra ID 使用者管理：帳號建立、授權、角色與批次管理
 
 <br/>
 
@@ -90,13 +90,11 @@ The project also demonstrates different methods of assigning directory roles and
 
 [Tasks]
 
-* Create New User Account (建立新使用者帳號)
-* Validate New User Sign-In (驗證新使用者登入)
-* Assign License to User (為使用者指派授權)
-* Invite External User (邀請外部使用者)
-* Assign Directory Role to User (為使用者指派目錄角色)
-* Assign Role through Roles & Administrators (透過 Roles & Administrators 指派角色)
-* Bulk Create Users with CSV (使用 CSV 批次建立使用者)
+* Create a New User (建立新用戶)
+* Add a license to the user (為使用者新增許可證)
+* Invite an external user (邀請外部用戶)
+* Assign a role to a user (為使用者指派角色)
+* Bulk import users (批次導入用戶)
 <br/>
 
 ---------
