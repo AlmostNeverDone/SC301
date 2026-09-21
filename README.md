@@ -86,7 +86,8 @@ The project also demonstrates different methods of assigning directory roles and
 
 * Microsoft Azure Portal (Azure 雲端管理平台)</b>
 * Microsoft Entra ID tenant (Entra ID 租戶環境)</b>
-* Azure Resource Group (Azure 資源群組)</b>
+* Microsoft Entra admin center (Microsoft Entra 管理中心)</b>
+* Microsoft 365 admin center (Microsoft 365 管理中心)</b>
 
 [Tasks]
 
@@ -147,8 +148,8 @@ The project also demonstrates different methods of assigning directory roles and
 <b>Task 5-1: Prepare the Bulk User CSV Template<br/> (準備批次使用者 CSV 範本)</b><br/>
 <img src="https://i.imgur.com/SvAymsA.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Prepared a CSV-based user provisioning file using the Microsoft Entra bulk user template.<br/>
-使用 Microsoft Entra 批次使用者範本準備 CSV 帳號建立檔案<br/>
+* The green-bordered area contains sample data, the blue-bordered area contains newly added users, <br/>and the red-bordered area contains required data that must be filled in before uploading.<br/>
+綠色框線區域為範本資料，藍色框線區域為本次新增使用者，紅色框線處則是上傳前必填資料<br/>
 <br />
 <br />
 <b>Task 5-2: Bulk Create and Validate Users<br/> (批次建立並驗證使用者)</b><br/>
@@ -164,21 +165,24 @@ The project also demonstrates different methods of assigning directory roles and
 
 <h2>Results｜專題結論</h2>
 
-This project demonstrated how Microsoft Entra ID and Azure RBAC can be used to implement a structured least-privilege access model within a cloud environment.
+---------
 
-本專題展示了如何利用 Microsoft Entra ID 與 Azure RBAC，在雲端環境中實作具結構性的最小權限存取模型。
+<h2>Results｜專題結論</h2>
 
-Through the creation of users, security groups, RBAC role assignments, and Temporary Access Pass (TAP) authentication workflows, the project successfully simulated a realistic employee onboarding and access validation process in Microsoft Azure.
+This project provided practical experience with fundamental identity and user administration tasks in Microsoft Entra ID. The workflow covered user provisioning, sign-in validation, service license assignment, external guest onboarding, directory role assignment, and bulk user creation.
 
-透過建立使用者、安全性群組、RBAC 角色指派，以及臨時存取通行證（TAP）驗證流程，本專題成功模擬了 Microsoft Azure 中貼近實務的新進人員帳號建立與權限驗證流程。
+本專題提供 Microsoft Entra ID 基礎身分與使用者管理的實務操作經驗，流程涵蓋使用者帳號建立、登入驗證、服務授權指派、外部 Guest 使用者建立、目錄角色指派，以及批次使用者建立。
 
-The lab also demonstrated how Azure IAM tools and Activity Logs can be used to verify effective permissions and audit administrative actions. By testing access using a restricted Reader account, the project confirmed that users could view resources while being prevented from performing unauthorized modifications.
+The project demonstrated that identity administration involves more than simply creating user accounts. User properties such as usage location, user type, licensing status, and assigned directory roles can directly affect the services and administrative capabilities available to each identity. External user invitation demonstrated how Microsoft Entra ID supports collaboration with identities outside the organization while maintaining a separate Guest user classification within the tenant. The directory role exercises also demonstrated multiple administrative workflows for assigning built-in Microsoft Entra roles, while bulk user provisioning introduced a more scalable approach to creating multiple identities through CSV-based operations.
 
-本實驗同時展示如何利用 Azure IAM 工具與 Activity Log 驗證有效權限與稽核管理操作。透過使用受限的 Reader 帳號進行測試，成功確認使用者能夠檢視資源，但無法執行未授權的修改操作。
+本專題展示身分管理不僅是建立使用者帳號，Usage Location、User Type、License 狀態以及目錄角色等使用者屬性，都可能直接影響身分可使用的服務與管理權限。外部使用者邀請流程則展示 Microsoft Entra ID 如何支援組織外部身分進行協作，同時透過 Guest 使用者類型在租戶中維持不同的身分分類。目錄角色實作展示了使用不同管理介面指派 Microsoft Entra 內建角色的方式；批次使用者建立則進一步導入以 CSV 為基礎的大量帳號建立流程，提升使用者管理的可擴展性。
 
-Overall, the project provided practical experience in identity management, RBAC configuration, secure onboarding workflows, and cloud access validation practices commonly used in enterprise Azure environments.
+Overall, the project demonstrated a basic identity lifecycle workflow in Microsoft Entra ID, from initial account provisioning and service enablement to external collaboration, administrative delegation, and scalable user management.
 
-整體而言，本專題提供了企業 Azure 環境中常見的身分管理、RBAC 權限配置、安全帳號啟用流程，以及雲端存取驗證的實務操作經驗。
+整體而言，本專題展示了 Microsoft Entra ID 中基礎的身分生命週期管理流程，從帳號建立與服務啟用，到外部協作、管理權限委派，以及可擴展的使用者管理方式。
+
+<br />
+<br />
 
 <br />
 <br />
@@ -189,26 +193,46 @@ Overall, the project provided practical experience in identity management, RBAC 
 <h2>Security Insight｜安全洞察</h2>
 
 
-Group-based RBAC significantly improves access management scalability and security consistency. Instead of assigning permissions directly to individual users, organizations can centrally manage permissions through security groups, reducing administrative complexity and minimizing configuration errors.
+Identity Lifecycle Management (身分生命週期管理)
 
-群組式 RBAC 可大幅提升權限管理的可擴展性與安全一致性。組織可透過安全性群組集中管理權限，而非直接對個別使用者逐一授權，藉此降低管理複雜度與設定錯誤風險。
+User provisioning should be treated as part of an identity lifecycle rather than as an isolated account creation task. Creating an identity, validating access, assigning required services, reviewing privileges, and managing the account at scale are interconnected administrative activities.
 
-The project also highlights the importance of the least-privilege principle in cloud environments. Even though the user account successfully authenticated and accessed Azure resources, RBAC restrictions prevented unauthorized resource creation and modification activities.
+使用者建立應視為身分生命週期的一部分，而非單純的帳號建立操作。建立身分、驗證存取、指派所需服務、檢視權限，以及大量管理帳號，皆屬於彼此關聯的身分管理流程。
 
-本專題同時凸顯最小權限原則在雲端環境中的重要性。即使使用者成功完成驗證並存取 Azure 資源，RBAC 限制仍有效阻止未授權的資源建立與修改行為。
 
-Temporary Access Pass (TAP) provides a secure onboarding mechanism for newly created accounts by allowing temporary authentication without requiring immediate MFA device enrollment. However, TAP should be tightly controlled, monitored, and disabled when no longer required to reduce potential abuse risks.
+User Attributes and Service Access (使用者屬性與服務存取)
 
-臨時存取通行證(TAP) 提供了一種安全的新帳號啟用機制，使使用者在尚未完成 MFA 裝置註冊前仍可進行臨時驗證。然而 TAP 應受到嚴格控管、監控，並於不再需要時停用，以降低潛在濫用風險。
+Identity attributes can directly affect access to cloud services. During the lab, license assignment depended on the user having a valid Usage Location, demonstrating that incomplete or incorrect identity properties can cause downstream access and provisioning failures.
 
-Azure Activity Logs and IAM validation tools also demonstrate the importance of visibility and auditing within cloud security operations. Administrative actions such as RBAC role assignments can leave clear audit trails, helping organizations support incident investigation, compliance, and security monitoring.
+身分屬性會直接影響雲端服務的存取與配置。本實驗中，License 指派需要使用者具備有效的 Usage Location，說明不完整或錯誤的身分屬性可能導致後續的存取與服務配置失敗。
 
-Azure Activity Log 與 IAM 驗證工具則展現了雲端安全營運中「可視性（Visibility）」與「稽核（Auditing）」的重要性。RBAC 角色指派等管理操作皆會留下清楚的稽核紀錄，有助於組織進行事件調查、法規遵循與安全監控。
 
-From a defensive perspective, properly scoped RBAC assignments, centralized identity management, MFA enforcement, and continuous auditing are critical components of securing enterprise cloud environments.
+External Identity Management (外部身分管理)
 
-從防禦角度而言，正確範圍的 RBAC 權限配置、集中式身分管理、多因素驗證（MFA）以及持續性稽核，皆是保護企業雲端環境的重要核心要素。
+Microsoft Entra ID allows external collaborators to be represented as Guest users within the tenant. Separating external identities from internal Members helps administrators apply different access policies and maintain clearer visibility over users who originate outside the organization.
 
+Microsoft Entra ID 可將外部協作者以 Guest 使用者形式建立於租戶中。將外部身分與內部 Member 分類管理，有助於套用不同的存取政策，並提升對組織外部使用者的可視性。
+
+
+Role-Based Administrative Delegation (角色式管理權限委派)
+
+Directory roles allow administrative permissions to be delegated according to operational responsibilities rather than granting unrestricted administrative access. Built-in roles provide a structured way to separate responsibilities and support the principle of least privilege.
+
+目錄角色可依據實際管理職責委派行政權限，而非直接授予不受限制的管理權限。Microsoft Entra 內建角色提供結構化的權限分工方式，有助於實踐最小權限原則。
+
+
+Bulk Provisioning and Validation (批次建立與驗證)
+
+Bulk user creation improves scalability but also increases the impact of configuration errors. CSV-based provisioning should therefore be followed by validation of bulk operation results and the resulting user objects instead of assuming that a successful submission means every account was created successfully.
+
+批次建立使用者能提升管理效率，但設定錯誤的影響範圍也會同步擴大。因此使用 CSV 進行大量帳號建立後，應進一步驗證 Bulk Operation 結果與實際產生的使用者物件，而不能僅依據提交成功訊息判斷所有帳號皆已建立完成。
+
+
+Administrative Verification (管理操作驗證)
+
+Identity administration should include verification after each significant change. Sign-in testing, reviewing assigned licenses, confirming Guest user type, checking directory role assignments, and validating bulk-created accounts help ensure that configuration changes produce the intended result.
+
+身分管理中的重要變更完成後應進行驗證。透過登入測試、確認 License 狀態、驗證 Guest 使用者類型、檢查目錄角色，以及確認批次建立帳號結果，可確保實際設定符合原先預期。
 
 
 <br />
@@ -218,6 +242,6 @@ From a defensive perspective, properly scoped RBAC assignments, centralized iden
 
 <h2>Reference｜參考</h2>
 
-* [Microsoft] [Microsoft Certified: Azure Fundamentals (AZ-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)<br/>
-* [Microsoft] [Apply Azure skills in guided projects](https://learn.microsoft.com/en-us/training/paths/introduction-cloud-infrastructure-apply-azure-skills-guided-projects/)<br/>
+* [Microsoft] [Microsoft Certified: Identity and Access Administrator Associate (SC-300)](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/?practice-assessment-type=certification)<br/>
+* [Microsoft] [Get started with identity and access labs](https://learn.microsoft.com/en-au/training/modules/get-started-identity-access-labs/)<br/>
 <br/>
