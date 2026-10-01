@@ -163,9 +163,6 @@ The project also demonstrates different methods of assigning directory roles and
   
 ---------
 
-<h2>Results｜專題結論</h2>
-
----------
 
 <h2>Results｜專題結論</h2>
 
@@ -180,9 +177,6 @@ The project demonstrated that identity administration involves more than simply 
 Overall, the project demonstrated a basic identity lifecycle workflow in Microsoft Entra ID, from initial account provisioning and service enablement to external collaboration, administrative delegation, and scalable user management.
 
 整體而言，本專題展示了 Microsoft Entra ID 中基礎的身分生命週期管理流程，從帳號建立與服務啟用，到外部協作、管理權限委派，以及可擴展的使用者管理方式。
-
-<br />
-<br />
 
 <br />
 <br />
